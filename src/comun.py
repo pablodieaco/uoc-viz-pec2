@@ -63,10 +63,17 @@ def fecha_descarga() -> str:
 
 
 def html_altair(grafico: alt.TopLevelMixin, id_div: str = "grafico") -> str:
-    # formatLocale: coma decimal y punto de miles también en tooltips y ejes
+    # formatLocale: coma decimal y punto de miles también en tooltips y ejes;
+    # timeFormatLocale: meses en español en los ejes de fecha sin formato fijo
     opciones = (
         '{actions: false, formatLocale: {decimal: ",", thousands: ".", '
-        'grouping: [3], currency: ["", " €"]}}'
+        'grouping: [3], currency: ["", " €"]}, timeFormatLocale: {dateTime: "%A, %e de %B de %Y, %X", '
+        'date: "%d/%m/%Y", time: "%H:%M:%S", periods: ["AM", "PM"], '
+        'days: ["domingo", "lunes", "martes", "miércoles", "jueves", "viernes", "sábado"], '
+        'shortDays: ["dom", "lun", "mar", "mié", "jue", "vie", "sáb"], '
+        'months: ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", '
+        '"septiembre", "octubre", "noviembre", "diciembre"], '
+        'shortMonths: ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"]}}'
     )
     # cada vista se guarda en window.vistas para poder cambiar sus parámetros desde la página
     return (
