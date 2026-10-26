@@ -32,7 +32,6 @@ a { color: var(--enlace); text-underline-offset: 2px; }
   text-transform: uppercase;
 }
 .tecnica a { color: inherit; text-decoration: none; }
-.tecnica a:hover { text-decoration: underline; }
 
 h1 {
   margin: 0 0 8px;
@@ -51,6 +50,10 @@ h2 { margin: 0 0 8px; font-size: 17px; }
 
 /* el heatmap y el horizon son más anchos que un móvil: scroll horizontal */
 .grafico { margin: 0 0 32px; overflow-x: auto; }
+.gauges-pequenos { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; max-width: 640px; margin: 32px auto 0; }
+.contexto { max-width: 46em; margin: 16px auto 0; text-align: center; }
+.etiqueta { margin: 0 0 4px; font-size: 14px; text-align: center; }
+@media (max-width: 560px) { .gauges-pequenos { grid-template-columns: 1fr; max-width: 260px; } }
 
 .boton {
   padding: 6px 14px;
@@ -64,10 +67,7 @@ h2 { margin: 0 0 8px; font-size: 17px; }
 }
 .boton[aria-pressed="true"] { background: var(--enlace); color: #ffffff; }
 
-.como-se-lee {
-  max-width: 46em;
-  margin-bottom: 40px;
-}
+.como-se-lee { max-width: 46em; margin-bottom: 40px; }
 .como-se-lee p { margin: 0 0 8px; }
 
 footer {
