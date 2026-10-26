@@ -50,10 +50,19 @@ h1 {
 h2 { margin: 0 0 8px; font-size: 17px; }
 
 /* el heatmap y el horizon son más anchos que un móvil: scroll horizontal */
-.grafico {
-  margin: 0 0 32px;
-  overflow-x: auto;
+.grafico { margin: 0 0 32px; overflow-x: auto; }
+
+.boton {
+  padding: 6px 14px;
+  border: 1px solid var(--enlace);
+  border-radius: 4px;
+  background: #ffffff;
+  color: var(--enlace);
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
 }
+.boton[aria-pressed="true"] { background: var(--enlace); color: #ffffff; }
 
 .como-se-lee {
   max-width: 46em;

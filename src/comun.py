@@ -63,9 +63,16 @@ def fecha_descarga() -> str:
 
 
 def html_altair(grafico: alt.TopLevelMixin, id_div: str = "grafico") -> str:
+    # formatLocale: coma decimal y punto de miles también en tooltips y ejes
+    opciones = (
+        '{actions: false, formatLocale: {decimal: ",", thousands: ".", '
+        'grouping: [3], currency: ["", " €"]}}'
+    )
+    # cada vista se guarda en window.vistas para poder cambiar sus parámetros desde la página
     return (
         f'<div id="{id_div}"></div>\n'
-        f'<script>vegaEmbed("#{id_div}", {grafico.to_json()}, {{actions: false}});</script>'
+        f'<script>vegaEmbed("#{id_div}", {grafico.to_json()}, {opciones})'
+        ".then((r) => (window.vistas = window.vistas || []).push(r.view));</script>"
     )
 
 
