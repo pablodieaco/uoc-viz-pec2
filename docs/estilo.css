@@ -1,0 +1,70 @@
+:root {
+  --texto: #222222;
+  --secundario: #595959;
+  --linea: #e4e4e4;
+  --enlace: #1d5c73;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--texto);
+  font-family: Lato, system-ui, sans-serif;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 16px 56px;
+}
+
+a { color: var(--enlace); text-underline-offset: 2px; }
+
+.tecnica {
+  margin: 0 0 8px;
+  color: var(--secundario);
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.tecnica a { color: inherit; text-decoration: none; }
+.tecnica a:hover { text-decoration: underline; }
+
+h1 {
+  margin: 0 0 8px;
+  font-size: clamp(26px, 4vw, 34px);
+  line-height: 1.2;
+}
+
+.subtitulo {
+  margin: 0 0 32px;
+  max-width: 46em;
+  color: var(--secundario);
+  font-size: 19px;
+}
+
+h2 { margin: 0 0 8px; font-size: 17px; }
+
+/* el heatmap y el horizon son más anchos que un móvil: scroll horizontal */
+.grafico {
+  margin: 0 0 32px;
+  overflow-x: auto;
+}
+
+.como-se-lee {
+  max-width: 46em;
+  margin-bottom: 40px;
+}
+.como-se-lee p { margin: 0 0 8px; }
+
+footer {
+  padding-top: 16px;
+  border-top: 1px solid var(--linea);
+  color: var(--secundario);
+  font-size: 14px;
+}
+footer p { margin: 0 0 6px; }

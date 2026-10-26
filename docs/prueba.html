@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>¿Se ve bien la plantilla? · PEC2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+  
+<script src="https://cdn.jsdelivr.net/npm/vega@5.30.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.26.0"></script>
+
+</head>
+<body>
+  <main>
+    <p class="tecnica"><a href="index.html">PEC2 · Visualización de datos</a> / Página de prueba</p>
+    <h1>¿Se ve bien la plantilla?</h1>
+    <p class="subtitulo">Subtítulo de ejemplo con un número formateado: 12.345,7 GWh.</p>
+
+    <figure class="grafico" role="img" aria-label="Barras de la demanda media por día de la semana">
+      <div id="grafico"></div>
+<script>vegaEmbed("#grafico", {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "config": {
+    "axis": {
+      "domainColor": "#bdbdbd",
+      "grid": false,
+      "labelColor": "#595959",
+      "labelFontSize": 11,
+      "tickColor": "#bdbdbd",
+      "titleColor": "#595959",
+      "titleFontWeight": "normal"
+    },
+    "background": "white",
+    "font": "Lato, system-ui, sans-serif",
+    "legend": {
+      "labelColor": "#595959",
+      "titleColor": "#595959",
+      "titleFontWeight": "normal"
+    },
+    "view": {
+      "stroke": null
+    }
+  },
+  "data": {
+    "name": "data-d95a5725ddf92db4a4e6654661a77aa9"
+  },
+  "datasets": {
+    "data-d95a5725ddf92db4a4e6654661a77aa9": [
+      {
+        "demanda_gwh": 712.7858442884615,
+        "dia": "L",
+        "fecha": 0
+      },
+      {
+        "demanda_gwh": 735.8800092884615,
+        "dia": "M",
+        "fecha": 1
+      },
+      {
+        "demanda_gwh": 734.4319973018869,
+        "dia": "X",
+        "fecha": 2
+      },
+      {
+        "demanda_gwh": 733.2093803461538,
+        "dia": "J",
+        "fecha": 3
+      },
+      {
+        "demanda_gwh": 728.2127849807692,
+        "dia": "V",
+        "fecha": 4
+      },
+      {
+        "demanda_gwh": 653.5716044230769,
+        "dia": "S",
+        "fecha": 5
+      },
+      {
+        "demanda_gwh": 615.7989353653846,
+        "dia": "D",
+        "fecha": 6
+      }
+    ]
+  },
+  "encoding": {
+    "tooltip": [
+      {
+        "field": "demanda_gwh",
+        "format": ".1f",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "field": "dia",
+      "sort": [
+        "L",
+        "M",
+        "X",
+        "J",
+        "V",
+        "S",
+        "D"
+      ],
+      "title": null,
+      "type": "nominal"
+    },
+    "y": {
+      "field": "demanda_gwh",
+      "title": "GWh/d\u00eda",
+      "type": "quantitative"
+    }
+  },
+  "height": 200,
+  "mark": {
+    "color": "#1d5c73",
+    "type": "bar"
+  },
+  "width": 400
+}, {actions: false});</script>
+    </figure>
+
+    <section class="como-se-lee">
+      <h2>Cómo se lee</h2>
+      <p>Texto de ejemplo del bloque «Cómo se lee».</p>
+    </section>
+
+    <footer>
+      <p>Fuente: Red Eléctrica, REData (apidatos.ree.es).</p>
+      <p>Datos descargados el 26/10/2026 ·
+        <a href="https://github.com/pablodieaco/uoc-viz-pec2/blob/main/data/processed/demanda_diaria_2025.csv">datos (CSV)</a> ·
+        <a href="https://github.com/pablodieaco/uoc-viz-pec2/blob/main/src/comun.py">código</a></p>
+      <p><a href="index.html">← Volver al índice</a></p>
+    </footer>
+  </main>
+</body>
+</html>
