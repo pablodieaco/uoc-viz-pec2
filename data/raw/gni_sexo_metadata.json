@@ -1,0 +1,80 @@
+{
+ "chart": {
+  "title": "Estimated gross national income (GNI) per capita, males vs. females",
+  "subtitle": "Gross national income measures the total income earned by residents of a country, including income earned abroad. These figures are estimates that split total GNI by sex according to wage gaps and each sex's share of the labor force, divided by each sex's population. This data is adjusted for inflation and differences in living costs between countries.",
+  "note": "This data is expressed in international-$ at 2021 prices.",
+  "citation": "UNDP, Human Development Report (2025)",
+  "originalChartUrl": "https://ourworldindata.org/grapher/gross-national-income-per-capita-males-vs-females?v=1&csvType=full&useColumnShortNames=true",
+  "selection": []
+ },
+ "columns": {
+  "gni_pc__sex_male": {
+   "titleShort": "Gross national income per capita (male)",
+   "titleLong": "Gross national income per capita (male)",
+   "descriptionShort": "Average income per person earned by residents of a country or region, including income earned abroad. This data is adjusted for inflation and for differences in living costs between countries. Only male population is considered.",
+   "descriptionKey": "- Gross national income (GNI) is a measure of the total income earned by residents of a country or region each year. It is calculated as gross domestic product (GDP) plus net income received from abroad (such as wages earned abroad and returns on foreign investments). GDP represents the total economic output of a country or region, while GNI represents the income received by its residents, wherever it is generated.\n- GNI is not measured separately by sex, so these figures are based on estimates of earned income by sex made by the UNDP. Total GNI is split by sex using data on the ratio of female to male wages and female and male shares of the economically active population. To get GNI per capita by sex, each sex’s share of GNI is divided by its population.\n- This data is expressed in constant international dollars at 2021 prices to adjust for inflation and differences in living costs between countries. Read more in our article, [What are international dollars?](https://ourworldindata.org/international-dollars)",
+   "shortUnit": "$",
+   "unit": "international-$ in 2021 prices",
+   "timespan": "1990-2023",
+   "type": "Numeric",
+   "owidVariableId": 1032435,
+   "shortName": "gni_pc__sex_male",
+   "lastUpdated": "2025-05-07",
+   "nextUpdate": "2026-11-26",
+   "citationShort": "UNDP, Human Development Report (2025) – with minor processing by Our World in Data",
+   "citationLong": "UNDP, Human Development Report (2025) – with minor processing by Our World in Data. “Gross national income per capita (male) – UNDP – In constant international-$” [dataset]. UNDP, Human Development Report, “Human Development Report” [original data].",
+   "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1032435.metadata.json"
+  },
+  "gni_pc__sex_female": {
+   "titleShort": "Gross national income per capita (female)",
+   "titleLong": "Gross national income per capita (female)",
+   "descriptionShort": "Average income per person earned by residents of a country or region, including income earned abroad. This data is adjusted for inflation and for differences in living costs between countries. Only female population is considered.",
+   "descriptionKey": "- Gross national income (GNI) is a measure of the total income earned by residents of a country or region each year. It is calculated as gross domestic product (GDP) plus net income received from abroad (such as wages earned abroad and returns on foreign investments). GDP represents the total economic output of a country or region, while GNI represents the income received by its residents, wherever it is generated.\n- GNI is not measured separately by sex, so these figures are based on estimates of earned income by sex made by the UNDP. Total GNI is split by sex using data on the ratio of female to male wages and female and male shares of the economically active population. To get GNI per capita by sex, each sex’s share of GNI is divided by its population.\n- This data is expressed in constant international dollars at 2021 prices to adjust for inflation and differences in living costs between countries. Read more in our article, [What are international dollars?](https://ourworldindata.org/international-dollars)",
+   "shortUnit": "$",
+   "unit": "international-$ in 2021 prices",
+   "timespan": "1990-2023",
+   "type": "Numeric",
+   "owidVariableId": 1032434,
+   "shortName": "gni_pc__sex_female",
+   "lastUpdated": "2025-05-07",
+   "nextUpdate": "2026-11-26",
+   "citationShort": "UNDP, Human Development Report (2025) – with minor processing by Our World in Data",
+   "citationLong": "UNDP, Human Development Report (2025) – with minor processing by Our World in Data. “Gross national income per capita (female) – UNDP – In constant international-$” [dataset]. UNDP, Human Development Report, “Human Development Report” [original data].",
+   "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1032434.metadata.json"
+  },
+  "population": {
+   "titleShort": "Population",
+   "titleLong": "Population",
+   "descriptionShort": "Population by country, available from 10,000 BCE to 2100, based on data and estimates from different sources.",
+   "descriptionKey": "- Population is the most commonly used metric throughout Our World in Data. It is used directly to understand population growth over time, and indirectly to calculate per-capita indicators, making it easier to compare countries of different sizes.\n- We construct this indicator by combining multiple sources covering different periods.\n  - HYDE v3.3 (2023): historical estimates from 10,000 BCE to 1799.\n  - Gapminder v7 (2022): for 1800-1949.\n  - UN World Population Prospects (2024): for 1950 onwards, including 2100 projections.\n  - Gapminder Systema Globalis (2023): additional source for former countries (Yugoslavia, USSR, etc.)\n- Breaks in the data may occur at the boundaries between sources due to their methodological differences.\n- You can read more about the sources and methodology in our [dedicated article](https://ourworldindata.org/population-sources). We also provide a table of sources showing the source we use for each country-year.\n- We calculate geographical aggregates (continents, income groups, etc.) by summing individual country populations. For years before 1800, we rely directly on HYDE's values for continents to ensure historical consistency.",
+   "descriptionProcessing": "### Combination of different sources\nWe construct our long-run population data by combining multiple sources:\n\n- 10,000 BCE–1799: historical estimates by HYDE (v3.3).\n\n- 1800–1949: historical estimates by Gapminder (v7).\n\n- 1950–2023: population records from the United Nations World Population Prospects (2024 revision).\n\n- 2024-2100: Projections based on Medium variant by the UN World Population Prospects (2024 revision).\n\n**Geographical aggregates**\n\n- For most years, we calculate aggregates by summing the population of member countries.\n- We do this based on [our definition of continents](https://ourworldindata.org/world-region-map-definitions#our-world-in-data) and the [World Bank’s income groups](https://ourworldindata.org/grapher/world-bank-income-groups).\n- The only exception is before 1800, where we use HYDE's estimates for continents (but not income groups).\n\nFor most of the years, we've estimated regional aggregates by summing the population of countries in each region. We've relied on [our continents](https://ourworldindata.org/world-region-map-definitions#our-world-in-data) and [World Bank income group definitions](https://ourworldindata.org/grapher/world-bank-income-groups). The only exception is before 1800, where we've used HYDE's estimates on continents (but not income groups).\n\n**World**\n- Before 1800: we use data from HYDE.\n- 1800-1950: we estimate the global population by summing all available countries in the dataset.\n- After 1950, we rely on estimates from the United Nations World Population Prospects.",
+   "shortUnit": "",
+   "unit": "people",
+   "timespan": "-10000-2100",
+   "type": "Integer",
+   "owidVariableId": 953899,
+   "shortName": "population",
+   "lastUpdated": "2024-07-15",
+   "nextUpdate": "2026-12-15",
+   "citationShort": "HYDE (2023); Gapminder (2022); UN WPP (2024) – with major processing by Our World in Data",
+   "citationLong": "HYDE (2023); Gapminder (2022); UN WPP (2024) – with major processing by Our World in Data. “Population” [dataset]. PBL Netherlands Environmental Assessment Agency, “History Database of the Global Environment 3.3”; Gapminder, “Population v7”; United Nations, “World Population Prospects”; United Nations, “World Population Prospects – Interim Update”; Gapminder, “Systema Globalis” [original data].",
+   "fullMetadata": "https://api.ourworldindata.org/v1/indicators/953899.metadata.json"
+  },
+  "owid_region": {
+   "titleShort": "World region according to OWID",
+   "titleLong": "World region according to OWID",
+   "descriptionShort": "Regions defined by Our World in Data, which are used in OWID charts and maps.",
+   "unit": "",
+   "timespan": "2023-2023",
+   "type": "Continent",
+   "owidVariableId": 900801,
+   "shortName": "owid_region",
+   "lastUpdated": "2023-01-01",
+   "citationShort": "Our World in Data",
+   "citationLong": "Our World in Data. “World region according to OWID” [dataset]. Our World in Data, “Regions” [original data].",
+   "fullMetadata": "https://api.ourworldindata.org/v1/indicators/900801.metadata.json"
+  }
+ },
+ "dateDownloaded": "2026-10-26",
+ "activeFilters": {}
+}

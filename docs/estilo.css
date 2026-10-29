@@ -1,0 +1,77 @@
+:root { --texto: #222222; --secundario: #595959; --linea: #e4e4e4; --enlace: #1d5c73; }
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--texto);
+  font-family: Lato, system-ui, sans-serif;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 16px 56px;
+}
+
+a { color: var(--enlace); text-underline-offset: 2px; }
+
+.tecnica {
+  margin: 0 0 8px;
+  color: var(--secundario);
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.tecnica a { color: inherit; text-decoration: none; }
+
+h1 {
+  margin: 0 0 8px;
+  font-size: clamp(26px, 4vw, 34px);
+  line-height: 1.2;
+}
+
+.subtitulo {
+  margin: 0 0 32px;
+  max-width: 46em;
+  color: var(--secundario);
+  font-size: 19px;
+}
+
+h2 { margin: 0 0 8px; font-size: 17px; }
+
+/* el heatmap y el horizon son más anchos que un móvil: scroll horizontal */
+.grafico { margin: 0 0 32px; overflow-x: auto; }
+.gauges-pequenos { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; max-width: 640px; margin: 32px auto 0; }
+.contexto { max-width: 46em; margin: 16px auto 0; text-align: center; }
+.etiqueta { margin: 0 0 4px; font-size: 14px; text-align: center; }
+@media (max-width: 560px) { .gauges-pequenos { grid-template-columns: 1fr; max-width: 260px; } }
+
+/* cabecera: ruta de la página a la izquierda y perfil discreto a la derecha */
+.cabecera { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin: 0 0 8px; }
+.cabecera .tecnica { margin: 0; }
+.perfil { display: flex; align-items: center; gap: 8px; flex-shrink: 0; color: var(--secundario); font-size: 13px; text-decoration: none; }
+.perfil img { border: 1px solid var(--linea); border-radius: 50%; }
+
+.boton { padding: 6px 14px; border: 1px solid var(--enlace); border-radius: 4px; background: #ffffff; color: var(--enlace); font: inherit; font-size: 14px; cursor: pointer; }
+.boton[aria-pressed="true"] { background: var(--enlace); color: #ffffff; }
+
+.como-se-lee { max-width: 46em; margin-bottom: 40px; }
+
+/* índice: una tarjeta por técnica, sin sombras ni bordes decorativos */
+.tarjetas { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin: 0 0 40px; padding: 0; list-style: none; }
+.tarjetas li { padding-top: 12px; border-top: 3px solid var(--enlace); }
+.tarjetas h2 { margin: 4px 0 8px; font-size: 20px; line-height: 1.3; }
+.tarjetas p { margin: 0; color: var(--secundario); font-size: 15px; }
+.como-se-lee p { margin: 0 0 8px; }
+
+footer {
+  padding-top: 16px;
+  border-top: 1px solid var(--linea);
+  color: var(--secundario);
+  font-size: 14px;
+}
+footer p { margin: 0 0 6px; }

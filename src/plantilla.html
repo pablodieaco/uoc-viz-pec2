@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>$titulo · PEC2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+  $scripts
+</head>
+<body>
+  <main>
+    <header class="cabecera">
+      <p class="tecnica"><a href="index.html">PEC2 · Visualización de datos</a> / $tecnica</p>
+      <a class="perfil" href="https://github.com/pablodieaco"><img src="images/avatar.png" alt="" width="28" height="28">Pablo Diego Acosta</a>
+    </header>
+    <h1>$titulo</h1>
+    <p class="subtitulo">$subtitulo</p>
+
+    <figure class="grafico" aria-label="$descripcion">
+      $grafico
+    </figure>
+
+    <section class="como-se-lee">
+      <h2>Cómo se lee</h2>
+      $como_se_lee
+    </section>
+
+    <footer>
+      <p>$fuente</p>
+      <p>Datos descargados el $fecha_descarga ·
+        <a href="$repositorio/blob/main/data/processed/$datos">datos (CSV)</a> ·
+        <a href="$repositorio/blob/main/src/$codigo">código</a></p>
+      <p><a href="index.html">← Volver al índice</a></p>
+    </footer>
+  </main>
+</body>
+</html>

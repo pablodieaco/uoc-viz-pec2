@@ -218,3 +218,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Notas de trabajo locales
+Claude.md
+CLAUDE.md
+briefing/
+
+# CSV completo de OWID (pesa mucho); se versiona el subconjunto de data/processed/
+data/raw/temperatura_anomalias.csv
